@@ -21,3 +21,26 @@ Install all req lib with
 - music fecthing api
 - responsive
 
+
+## Appendix
+
+for adding more music just add your music in "public/music" folder as
+
+- yourmusicname - authorname.mp3
+
+example - tum mere - fukra Insaan.mp3
+
+then add the music logo or img in "public/assets/micons" as same name of music 
+
+- yourmusicname.png
+
+example - tum mere.png
+
+and now just run the server.js using
+
+node server.js
+
+have fun with music....
+
+
+Made by Self-Nasu Aka Naman Jain.
