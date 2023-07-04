@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- Website favicon -->
+    <link rel="shortcut icon" href="assets/icons/logo.webp" type="image/webp">
+
+    <!-- Boostrap 5 CDN Links -->
+    <section>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    </section>
+
+    <!-- Project main css linking-->
+    <section>
+        <link rel="stylesheet" href="css/head-foot.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/player.css">
+    </section>
+</head>
+<body>
+    <header class="fixed-top container-fluid header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand web-logo" href="/">
+                    <img id="nav-logo" src="assets/icons/logo.webp" alt="logo" class="d-inline-block align-text-top me-1">
+                    Music Player by Naman Jain
+                </a>
+            </div>
+          </nav>
+    </header>
+
+    <section id="main" class="container-fluid">
+        <div id="music-holder" class="container">
+            <div id="all-cards" class="row"></div>
+            <!-- <div class="card mb-3 mu-card">
+                <div class="card-inside">
+                    <img src="assets/micons/TUM-MERE.jpg" class="img-fluid rounded-start mu-img" alt="tum mere">
+                    <div class="card-body">
+                      <h5 class="card-title">Tum Mere</h5>
+                      <a class="au-name">Author/Artist -</a>
+                      <a class="au-name">Fukra Insaan</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <section id="player" class="container-fluid fixed-bottom">
+    
+        <!-- Define the section for displaying details -->
+        <div class="details">
+            <div class="now-playing">Loading...</div>
+            <div class="track-name">Loading...</div>
+            <div class="track-artist">Loading...</div>
+        </div>
+        
+        <div class="main-player">
+
+            <!-- Define the section for displaying the seek slider-->
+            <div id="music-silder" class="slider_container">
+                <div class="current-time">00:00</div>
+                <input id="myrange" type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                <div class="total-duration">00:00</div>
+            </div>
+
+            <!-- Define the section for displaying track buttons -->
+            <div class="buttons">
+                <div class="prev-track p-btn" onclick="prevTrack()">
+                    <i class="bi bi-skip-backward-circle-fill"></i>
+                </div>
+                <div class="playpause-track p-btn" onclick="playpauseTrack()">
+                    <i class="bi bi-play-circle-fill"></i>
+                    <!-- <i class="bi bi-pause-circle-fill"></i> -->
+                </div>
+                <div class="next-track p-btn" onclick="nextTrack()">
+                    <i class="bi bi-skip-forward-circle-fill"></i>
+                </div>
+            </div>
+            
+        </div>
+    
+        <!-- Define the section for displaying the volume slider-->
+        <div class="slider_container" id="volume">
+            <div class="vl-lable">
+                Volume
+            </div>
+            <div class="vl-main">
+                <i class="bi bi-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                <i class="bi bi-volume-up"></i>
+            </div>
+        </div>
+    
+    </section>
+
+    <script src="main.js"></script>
+    <script src="player.js"></script>
+</body>
+</html>

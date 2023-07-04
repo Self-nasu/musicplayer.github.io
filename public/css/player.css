@@ -1,0 +1,66 @@
+/* Player CSS */
+
+#player {
+    margin-top: 10vh;
+    display: flex;
+    padding-top: 1.8vh;
+    padding-bottom: 1.8vh;
+    align-items: center;
+    border: 0.3px solid gray;
+    background: linear-gradient(89deg, #aeb0ae, #909090, #a8a5a5, #bdbdbd, #a6a6a6);
+    justify-content: space-between;
+    background-size: 1200% 1200%;
+    -webkit-animation: AnimationName 22s ease infinite;
+    -moz-animation: AnimationName 22s ease infinite;
+    animation: AnimationName 22s ease infinite;
+    box-shadow: 0px -2px 2.5px 0.3px rgba(128, 128, 128, 0.365);
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+.main-player {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.buttons {
+    display: flex;
+}
+.p-btn {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1.6rem;
+}
+.p-btn>i {
+    cursor: pointer;
+}
+.slider_container {
+    display: flex;
+}
+#myrange {
+    width: 50rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+#volume {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.vl-lable {
+    font-weight: bold;
+}
+.vl-main>i {
+    font-size: 1.3rem;
+}

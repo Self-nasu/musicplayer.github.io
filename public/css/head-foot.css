@@ -1,0 +1,15 @@
+/* Header CSS */
+.header {
+    box-shadow: 0px 0.5px 3px 0.7px rgba(87, 87, 87, 0.388);
+}
+#nav-logo {
+    height: 35px;
+    border-radius: 7px;
+}
+.web-logo {
+    font-family: var(--logo-font);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+}

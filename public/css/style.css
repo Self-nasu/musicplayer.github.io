@@ -1,0 +1,10 @@
+/* font impoting */
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+
+:root {
+
+    --logo-font: 'Belanosima', sans-serif;
+    --logo-color: #707070;
+
+  }
